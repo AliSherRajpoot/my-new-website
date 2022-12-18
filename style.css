@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: gainsboro;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 90px;
+
+}
+form input{
+    padding: 15px;
+}

@@ -1,19 +1,29 @@
 
 function checkPalindrome(string) {
-
-    const len = string.length;
-
-    for (let i = 0; i < len / 2; i++) {
-
-        if (string[i] !== string[len - 1 - i]) {
-            return 'It is not a palindrome';
-        }
+    var  chararray=Array.from(string);
+    
+  var reversenewarray=  chararray.reverse();
+    let newreversestring="";
+    for(let j=0;j<reversenewarray.length;j++){
+        newreversestring+=reversenewarray[j];
     }
-    return 'It is a palindrome';
+           if(string===newreversestring){
+            document.getElementById('result').innerHTML="THIS IS A PALENDROME";
+
+           }
+           else{
+            document.getElementById('result').innerHTML="THIS IS NOT A PALENDROME";
+
+           }
+
+    // const len = string.length;
+
+    // for (let i = 0; i < len / 2; i++) {
+
+    //     if (string[i] !== string[len - 1 - i]) {
+    //         return 'It is not a palindrome';
+    //     }
+    // }
+    // return 'It is a palindrome';
 }
 
-const string = prompt('Enter a string: ');
-
-const value = checkPalindrome(string);
-
-alert(value);

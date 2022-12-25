@@ -5,28 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h3>Lab Assigment</h3>
-
-    <script>
-      function checkPalindrome(string) {
-        const len = string.length;
-
-        for (let i = 0; i < len / 2; i++) {
-          if (string[i] !== string[len - 1 - i]) {
-            return "It is not a palindrome";
-          }
-        }
-        return "It is a palindrome";
-      }
-
-      const string = prompt("Enter a string: ");
-
-      const value = checkPalindrome(string);
-
-      document.write(value);
-    </script>
+    <h2>Lab Assigment</h2>
+    <div class="set">
+   <input type="text" id="palendrome">
+   <input type="button" value="CHECK NOW" onclick="checkPalindrome(document.getElementById('palendrome').value)">
+  </div>
+  <div id="result">
+    <h1>RESULT</h1>
+  </div>
+  <script src="./mathSolutions.js"></script>
   </body>
 </html>
